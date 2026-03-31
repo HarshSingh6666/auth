@@ -5,7 +5,7 @@ const User = require('../models/User');
 const { protect } = require('../middleware/authMiddleware');
 
 // 👇 YAHAN PAR CONTROLLER SE FUNCTIONS IMPORT KIYE GAYE HAIN 👇
-const { forgotPassword, resetPassword } = require('./controllers/authController');
+const { forgotPassword, resetPassword } = require('../controllers/authController');
 
 // Helper to generate JWT
 const generateToken = (id) => {
